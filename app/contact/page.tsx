@@ -103,7 +103,7 @@ export default function ContactPage() {
               id="message"
               name="message"
               required
-              rows={4}
+              rows={1}
               value={formData.message}
               onChange={handleChange}
               className="w-full px-3 py-2 border border-gray-200 dark:border-gray-800 rounded-lg bg-white dark:bg-gray-950 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-gray-600 transition-all resize-y"
@@ -129,7 +129,7 @@ export default function ContactPage() {
               className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
               <span className="text-sm text-gray-500 dark:text-gray-500">email</span>
               <br />
-              <span className="underline">abramovichroman19@gmail.com</span>
+              <span className="underline" style={{ color: 'var(--foreground)' }}>abramovichroman19@gmail.com</span>
             </a>
             <a 
               href="https://www.linkedin.com/in/roman-abramovich-a49bb92a5/" 
@@ -139,7 +139,7 @@ export default function ContactPage() {
             >
               <span className="text-sm text-gray-500 dark:text-gray-500">linkedin</span>
               <br />
-              <span className="underline">Roman Abramovich</span>
+              <span className="underline" style={{ color: 'var(--foreground)' }}>Roman Abramovich</span>
             </a>
             <a 
               href="https://github.com/Romanabramovich" 
@@ -149,7 +149,7 @@ export default function ContactPage() {
             >
               <span className="text-sm text-gray-500 dark:text-gray-500">github</span>
               <br/>
-              <span className="underline">@romanabramovich</span>
+              <span className="underline" style={{ color: 'var(--foreground)' }}>@romanabramovich</span>
             </a>
           </div>
         </div>

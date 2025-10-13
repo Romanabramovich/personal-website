@@ -87,7 +87,7 @@ export default function Page() {
         {/*<h6 className="text-xl text-gray-600 dark:text-gray-400 pl-2">always looking for more</h6>*/}
       </header>
 
-      <hr className="w-full border-gray-200 dark:border-white-200 border-2.5 -mt-3"/>
+      <hr className="w-full border-gray-200 dark:border-white-200 border-2.5 -mt-3" style={{ borderColor: 'var(--foreground)' }}/>
       
       {/* page content */}
       <div className="space-y-3">
@@ -117,7 +117,7 @@ export default function Page() {
                       className="hover:opacity-70 transition-opacity"
                       aria-label="View on GitHub"
                     >
-                      <Image src="/icons/github-mark-white.svg" width={20} height={20} alt="GitHub" />
+                      <Image src="/icons/github-mark-white.svg" width={20} height={20} alt="GitHub" className="github-icon" />
                     </a>
                   )}
                   <span className="text-xl">{isOpen ? '−' : '+'}</span>

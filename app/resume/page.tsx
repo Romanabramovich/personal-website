@@ -23,7 +23,7 @@ export default function ResumePage() {
         </div>
       </header>
 
-      <hr className="w-full border-gray-200 dark:border-white-200 border-2.5 -mt-3"/>
+      <hr className="w-full border-gray-200 dark:border-white-200 border-2.5 -mt-3" style={{ borderColor: 'var(--foreground)' }}/>
 
       {/* PDF Viewer */}
       <div className="w-full">

@@ -26,7 +26,7 @@ export default function Page() {
           {/* status badge + social links */}
           <div className="ml-auto flex flex-col items-end gap-1 text-sm md:text-base mt-3">
             {/* status badge */}
-            <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+            <div className="flex items-center gap-2" style={{ color: 'var(--status-text)' }}>
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
               <span>seeking summer 2026 internship</span>
             </div>
@@ -44,16 +44,16 @@ export default function Page() {
         </div>
 
         {/* last name row */}
-        <h6 className="text-xl text-gray-600 dark:text-gray-400 pl-44">abramovich</h6>
+        <h6 className="text-xl pl-44">abramovich</h6>
       </header>
 
-      <hr className="w-full border-gray-200 dark:border-white-200 border-2.5"/>
+      <hr className="w-full border-2.5" style={{ borderColor: 'var(--foreground)' }}/>
       
       {/* page content */}
       <div className="space-y-3">
         <div className="space-y-3">
-          <h6 className="text-lg font-semibold text-gray-600 dark:text-gray-400  tracking-wider">noun</h6>
-          <ol style={{ listStyleType: 'lower-roman' }} className="text-md list-outside pl-10.5 space-y-1 text-gray-700 dark:text-gray-300 leading-relaxed">
+          <h6 className="text-lg font-semibold text-gray-600 dark:text-gray-400  tracking-wider" style={{ color: 'var(--foreground)' }}>noun</h6>
+          <ol style={{ listStyleType: 'lower-roman', color: 'var(--indent-text)' }} className="text-md list-outside pl-10.5 space-y-1 text-gray-700 dark:text-gray-300 leading-relaxed">
             <li>computer science student at toronto metropolitan university ('27 grad)</li>
             <li>just a guy who builds cool things to make peoples lives easier</li>
             <li>someone who loves learning and getting better everyday</li>
@@ -61,8 +61,8 @@ export default function Page() {
         </div>
         
         <div className="space-y-3">
-          <h6 className="text-lg font-semibold text-gray-600 dark:text-gray-400  tracking-wider">adjective</h6>
-          <ol style={{ listStyleType: 'lower-roman' }} className="text-md list-outside pl-10.5 space-y-1 text-gray-700 dark:text-gray-300 leading-relaxed">
+          <h6 className="text-lg font-semibold text-gray-600 dark:text-gray-400  tracking-wider" style={{ color: 'var(--foreground)' }}>adjective</h6>
+          <ol style={{ listStyleType: 'lower-roman', color: 'var(--indent-text)' }} className="text-md list-outside pl-10.5 space-y-1 text-gray-700 dark:text-gray-300 leading-relaxed">
             <li>curious</li>
             <li>hardworking</li>
             <li>tall ... very tall (an entire 194 centimeters tall)</li>
