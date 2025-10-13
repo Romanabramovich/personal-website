@@ -52,8 +52,8 @@ export default function Page() {
       {/* page content */}
       <div className="space-y-3">
         <div className="space-y-3">
-          <h6 className="text-sm font-semibold text-gray-600 dark:text-gray-400  tracking-wider">noun</h6>
-          <ol style={{ listStyleType: 'lower-roman' }} className="text-sm list-outside pl-10.5 space-y-1 text-gray-700 dark:text-gray-300 leading-relaxed">
+          <h6 className="text-lg font-semibold text-gray-600 dark:text-gray-400  tracking-wider">noun</h6>
+          <ol style={{ listStyleType: 'lower-roman' }} className="text-md list-outside pl-10.5 space-y-1 text-gray-700 dark:text-gray-300 leading-relaxed">
             <li>computer science student at toronto metropolitan university ('27 grad)</li>
             <li>just a guy who builds cool things to make peoples lives easier</li>
             <li>someone who loves learning and getting better everyday</li>
@@ -61,8 +61,8 @@ export default function Page() {
         </div>
         
         <div className="space-y-3">
-          <h6 className="text-sm font-semibold text-gray-600 dark:text-gray-400  tracking-wider">adjective</h6>
-          <ol style={{ listStyleType: 'lower-roman' }} className="text-sm list-outside pl-10.5 space-y-1 text-gray-700 dark:text-gray-300 leading-relaxed">
+          <h6 className="text-lg font-semibold text-gray-600 dark:text-gray-400  tracking-wider">adjective</h6>
+          <ol style={{ listStyleType: 'lower-roman' }} className="text-md list-outside pl-10.5 space-y-1 text-gray-700 dark:text-gray-300 leading-relaxed">
             <li>curious</li>
             <li>hardworking</li>
             <li>tall ... very tall (an entire 194 centimeters tall)</li>
