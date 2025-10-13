@@ -3,16 +3,44 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --status-text: #018520;
+  --indent-text: #6e6e6e;
+  --input-bg: #ffffff;
+  --input-border: #e5e7eb;
+  --input-text: #171717;
 }
 
 .dark {
   --background: #0a0a0a;
   --foreground: #ededed;
+  --status-text: #00a627;
+  --indent-text: #999999;
+  --input-bg: #030712;
+  --input-border: #1f2937;
+  --input-text: #ededed;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* GitHub icon - black in light mode, white in dark mode */
+.github-icon {
+  filter: brightness(0);
+}
+
+.dark .github-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* Form inputs */
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color: var(--input-bg) !important;
+  border-color: var(--input-border) !important;
+  color: var(--input-text) !important;
 }
 
