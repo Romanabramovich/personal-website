@@ -72,8 +72,8 @@ export default function Page() {
           <h1 className="text-5xl md:text-8xl font-bold tracking-tight leading-none">work</h1>
 
           {/* page description - vertically centered with 'roman' */}
-          <div className="flex gap-8 text-sm md:text-base mt-3">
-            <div className="text-gray-600 dark:text-gray-400 space-y-1 ml-10">
+          <div className="flex gap-4 md:gap-8 text-xs md:text-base mt-3">
+            <div className="text-gray-600 dark:text-gray-400 space-y-1 ml-2 md:ml-10">
               <p>internships:</p>
               <p>projects:</p>
             </div>
@@ -99,15 +99,22 @@ export default function Page() {
               {/* Clickable Header */}
               <button
                 onClick={() => setOpenIndex(isOpen ? null : index)}
-                className="w-full p-4 text-left flex justify-between items-center">
-                <div>
-                  {exp.company}  
-                  {exp.role ? `| ${exp.role}` : ''}  
-                  {exp.techstack && <> | <span className="text-xs text-gray-600 dark:text-gray-400">{exp.techstack}</span></>}
+                className="w-full p-3 md:p-4 text-left flex justify-between items-start md:items-center gap-2">
+                <div className="text-sm md:text-base flex-1 min-w-0">
+                  <div className="break-words">
+                    {exp.company}  
+                    {exp.role ? `| ${exp.role}` : ''}
+                  </div>
+                  {exp.techstack && (
+                    <div className="mt-1 md:mt-0 md:inline">
+                      <span className="hidden md:inline lg:inline"> | </span>
+                      <span className="text-xs text-gray-600 dark:text-gray-400">{exp.techstack}</span>
+                    </div>
+                  )}
                 </div>
                 
                 {/* GitHub icon + toggle */}
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-2 md:gap-3 flex-shrink-0">
                   {exp.githubUrl && (
                     <a
                       href={exp.githubUrl}
@@ -117,10 +124,10 @@ export default function Page() {
                       className="hover:opacity-70 transition-opacity"
                       aria-label="View on GitHub"
                     >
-                      <Image src="/icons/github-mark-white.svg" width={20} height={20} alt="GitHub" className="github-icon" />
+                      <Image src="/icons/github-mark-white.svg" width={18} height={18} alt="GitHub" className="github-icon md:w-5 md:h-5" />
                     </a>
                   )}
-                  <span className="text-xl">{isOpen ? '−' : '+'}</span>
+                  <span className="text-lg md:text-xl">{isOpen ? '−' : '+'}</span>
                 </div>
               </button>
 

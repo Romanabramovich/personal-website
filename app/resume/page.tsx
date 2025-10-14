@@ -16,7 +16,7 @@ export default function ResumePage() {
           <a
             href={downloadUrl}
             download="Roman_Abramovich_Resume.pdf"
-            className="px-6 py-3 text-base mt-3 md:text-lg font-semibold bg-gray-900 dark:bg-gray-100 text-white dark:text-black rounded-lg hover:bg-gray-700 dark:hover:bg-gray-500 transition-colors"
+            className="px-4 py-2 md:px-6 md:py-3 text-sm md:text-base lg:text-lg font-semibold bg-gray-900 dark:bg-gray-100 text-white dark:text-black rounded-lg hover:bg-gray-700 dark:hover:bg-gray-500 transition-colors whitespace-nowrap"
           >
             download pdf
           </a>

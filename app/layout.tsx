@@ -40,10 +40,10 @@ export default function RootLayout({children,}: {
       <body className="min-h-screen bg-background text-foreground antialiased">
         {/* navigation */}
         <nav className="border-b border-2.5" style={{ borderColor: 'var(--foreground)' }}>
-          <div className="max-w-4xl mx-auto px-6 py-6">
+          <div className="max-w-4xl mx-auto px-4 md:px-6 py-4 md:py-6">
             <div className="flex items-center justify-between">
               {/* Centered navigation links */}
-              <div className="flex-1 flex justify-left gap-40 text-sm">
+              <div className="flex-1 flex justify-left gap-15 md:gap-35 lg:gap-40 text-xs sm:text-sm">
                 <Link href="/" className="hover:text-gray-600 dark:hover:text-gray-400 transition-colors">
                   about me
                 </Link>
@@ -65,7 +65,7 @@ export default function RootLayout({children,}: {
         </nav>
     
         {/* child container */}
-        <main className="max-w-4xl mx-auto px-6 py-6">
+        <main className="max-w-4xl mx-auto px-4 md:px-6 py-4 md:py-6">
           {children}
         </main>
       </body>

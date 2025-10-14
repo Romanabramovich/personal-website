@@ -38,7 +38,7 @@ export default function ContactPage() {
 
       </header>
 
-      <hr className="w-full border-gray-200 dark:border-white-200 border-2.5 -mt-3"/>
+      <hr className="w-full border-gray-200 dark:border-white-200 border-2.5 -mt-3" style={{ borderColor: 'var(--foreground)' }}/>
 
       {/* Contact Form + Alternative Methods */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
