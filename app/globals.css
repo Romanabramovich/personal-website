@@ -10,6 +10,7 @@
   --input-text: #171717;
   --github-text: #ff9d00;
   --linkedin-text: #0077b5;
+  --lastname-text: #757575;
 }
 
 .dark {
@@ -20,6 +21,7 @@
   --input-bg: #030712;
   --input-border: #1f2937;
   --input-text: #ededed;
+  --lastname-text: #c6c6c6;
 }
 
 body {
