@@ -29,7 +29,7 @@ export default function ResumePage() {
       <div className="w-full">
         <iframe
           src={drivePreviewUrl}
-          className="w-full h-[800px] md:h-[1000px] border border-gray-200 dark:border-gray-800 rounded-lg"
+          className="w-full  h-[400px] md:h-[1000px] border border-gray-200 dark:border-gray-800 rounded-lg"
           allow="autoplay"
           title="Resume PDF"
         />
@@ -37,4 +37,3 @@ export default function ResumePage() {
     </div>
   );
 }
-
