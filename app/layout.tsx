@@ -40,11 +40,10 @@ export default function RootLayout({children,}: {
       <body className="min-h-screen bg-background text-foreground antialiased">
         {/* navigation */}
         <nav className="border-b border-2.5" style={{ borderColor: 'var(--foreground)' }}>
-          <div className="max-w-4xl mx-auto px-4 md:px-6 py-4 md:py-6">
-            <div className="flex items-center justify-between">
-              {/* Centered navigation links */}
-              <div className="flex-1 flex justify-left gap-15 md:gap-35 lg:gap-40 text-xs sm:text-sm">
-                <Link href="/" className="hover:text-gray-600 dark:hover:text-gray-400 transition-colors">
+          <div className="max-w-4xl mx-auto px-2 md:px-6 py-4 md:py-6">
+            <div className="flex items-center justify-between gap-2">
+              <div className="flex-1 flex justify-evenly md:justify-start md:gap-8 lg:gap-40 text-xs sm:text-sm">
+                <Link href="/" className="hover:text-gray-600 dark:hover:text-gray-400 transition-colors whitespace-nowrap">
                   about me
                 </Link>
                 <Link href="/work" className="hover:text-gray-600 dark:hover:text-gray-400 transition-colors">
@@ -53,13 +52,15 @@ export default function RootLayout({children,}: {
                 <Link href="/resume" className="hover:text-gray-600 dark:hover:text-gray-400 transition-colors">
                   resume
                 </Link>
-                <Link href="/contact" className="hover:text-gray-600 dark:hover:text-gray-400 transition-colors">
+                <Link href="/contact" className="hover:text-gray-600 dark:hover:text-gray-400 transition-colors whitespace-nowrap">
                   contact me
                 </Link>
               </div>
               
               {/* Theme toggle on the right */}
-              <ThemeToggle />
+              <div className="flex-shrink-0">
+                <ThemeToggle />
+              </div>
             </div>
           </div>
         </nav>
