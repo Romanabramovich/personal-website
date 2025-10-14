@@ -99,16 +99,15 @@ export default function Page() {
               {/* Clickable Header */}
               <button
                 onClick={() => setOpenIndex(isOpen ? null : index)}
-                className="w-full p-3 md:p-4 text-left flex justify-between items-start md:items-center gap-2">
-                <div className="text-sm md:text-base flex-1 min-w-0">
+                className="w-full p-2 md:p-1.5 md:pl-2 2xl:p-3 2xl:pl-4 text-left flex justify-between items-start md:items-center gap-2">
+                <div className="text-sm md:text-base xl:text-4sm 2xl:text-xl flex-1 min-w-0">
                   <div className="break-words">
                     {exp.company}  
                     {exp.role ? `| ${exp.role}` : ''}
                   </div>
                   {exp.techstack && (
                     <div className="mt-1 md:mt-0 md:inline">
-                      <span className="hidden md:inline lg:inline"> | </span>
-                      <span className="text-xs text-gray-600 dark:text-gray-400">{exp.techstack}</span>
+                      <span className="text-xs md:text-sm lg:text-base xl:text-xs 2xl:text-lg text-gray-600 dark:text-gray-400">{exp.techstack}</span>
                     </div>
                   )}
                 </div>
@@ -133,7 +132,7 @@ export default function Page() {
 
               {/* Expandable Content */}
               {isOpen && (
-                <div className="pl-4 pr-4 pb-4 text-sm">
+                <div className="pl-4 pr-4 pb-4  text-sm 2xl:text-xl">
                   {/* Responsibilities */}
                   <ul>
                     {exp.responsibilities.map((responsibility, index) => (
