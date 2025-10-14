@@ -17,24 +17,24 @@ export default function Page() {
         <div className="mt-4 md:mt-6 flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-8">
           
           {/* location info */}
-          <div className="flex flex-col gap-1.5 text-sm md:text-base">
+          <div className="flex flex-col gap-1.5 text-sm md:text-lg lg:text-lg xl:text-2xl">
             <div className="flex gap-2">
               <span className="text-gray-600 dark:text-gray-400 w-14">born:</span>
-              <span>buenos aires, argentina</span>
+              <span className="xl:ml-12">buenos aires, argentina</span>
             </div>
-            <div className="flex md:mt-4 gap-2">
+            <div className="flex md:mt-4 gap-2 ">
               <span className="text-gray-600 dark:text-gray-400 w-14 ">raised:</span>
-              <span>toronto, canada</span>
+              <span className="xl:ml-12">toronto, canada</span>
             </div>
           </div>
 
           {/* links */}
           <div className="flex flex-col gap-2.5 md:items-end md:ml-auto">
             <div className="inline-flex items-center gap-2 " style={{ color: 'var(--status-text)' }}>
-              <span className="text-sm md:text-base font-medium py-1">seeking 2026 internship</span>
+              <span className="text-sm md:text-lg md:text-base lg:text-lg xl:text-2xl font-medium py-1">seeking 2026 internships</span>
             </div>
             
-            <div className="flex gap-4 text-sm md:text-base">
+            <div className="flex gap-4 text-sm md:text-lg md:text-base lg:text-lg xl:text-2xl">
               <a 
                 href="https://github.com/Romanabramovich" 
                 target="_blank" 
@@ -64,10 +64,10 @@ export default function Page() {
       <div className="space-y-3">
         <div className="space-y-3">
           
-          <ol style={{ listStyleType: 'lower-roman', color: 'var(--indent-text)' }} className="text-md list-outside pl-3 space-y-1 text-gray-700 dark:text-gray-300 leading-relaxed">
+          <ol style={{ listStyleType: 'lower-roman', color: 'var(--indent-text)' }} className="text-md list-outside pl-4 space-y-3 md:space-y-8 lg:space-y-16 xl:space-y-25 lg:text-2xl xl:space-y-16 xl:text-3xl text-gray-700 dark:text-gray-300 leading-relaxed">
             <li>computer science student at toronto metropolitan university ('27 grad)</li>
             <li>just a guy building cool things to make people's lives easier</li>
-            <li>always down for a quick chat</li>
+            <li>outside of vscode, you can find me golfing or on the basketball court</li>
             <li>haha get it i used roman numerals list numbering because of my name</li>
           </ol>
         </div>

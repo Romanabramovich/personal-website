@@ -42,7 +42,7 @@ export default function RootLayout({children,}: {
         <nav className="border-b border-2.5" style={{ borderColor: 'var(--foreground)' }}>
           <div className="max-w-4xl mx-auto px-2 md:px-6 py-4 md:py-6">
             <div className="flex items-center justify-between gap-2">
-              <div className="flex-1 flex justify-evenly md:justify-start md:gap-8 lg:gap-40 text-xs sm:text-sm">
+              <div className="flex-1 flex justify-evenly md:justify-start md:gap-30 lg:gap-40 text-xs sm:text-sm lg:text-lg xl:text-xl">
                 <Link href="/" className="hover:text-gray-600 dark:hover:text-gray-400 transition-colors whitespace-nowrap">
                   about me
                 </Link>
