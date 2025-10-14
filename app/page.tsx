@@ -64,7 +64,7 @@ export default function Page() {
       <div className="space-y-3">
         <div className="space-y-3">
           
-          <ol style={{ listStyleType: 'lower-roman', color: 'var(--indent-text)' }} className="text-md list-outside pl-4 space-y-3 md:space-y-8 lg:space-y-16 xl:space-y-25 lg:text-2xl xl:space-y-16 xl:text-3xl text-gray-700 dark:text-gray-300 leading-relaxed">
+          <ol style={{ listStyleType: 'lower-roman', color: 'var(--indent-text)' }} className="text-md list-outside pl-4 space-y-3 md:space-y-8 lg:space-y-8 xl:space-y-10 lg:text-2xl xl:space-y-10 2xl:space-y-16 xl:text-xl 2xl:text-3xl text-gray-700 dark:text-gray-300 leading-relaxed">
             <li>computer science student at toronto metropolitan university ('27 grad)</li>
             <li>just a guy building cool things to make people's lives easier</li>
             <li>outside of vscode, you can find me golfing or on the basketball court</li>
