@@ -22,7 +22,18 @@ export const metadata: Metadata = {
       { url: '/icons/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
     ],
   },
+  metadataBase: new URL('https://romanabramovich.vercel.app'),
+  openGraph: {
+  title: 'Roman Abramovich - Software Developer',
+  description: "Roman Abramovich's portfolio website",
+  url: 'https://romanabramovich.vercel.app',
+  siteName: 'Roman Abramovich Portfolio',
+  locale: 'en_US',
+  type: 'website',
+  images: ['/profilePic.jpg'],
+  },
 }
+
 
 export default function RootLayout({children,}: {
   children: React.ReactNode;
