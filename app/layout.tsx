@@ -14,7 +14,14 @@ export const metadata: Metadata = {
   keywords: ['Roman Abramovich', 'portfolio', 'website', 'Internship', 'Software Engineer', 'Software Developer'],
   authors: [{ name: 'Roman Abramovich' }],
   creator: 'Roman Abramovich',
-  publisher: 'Roman Abramovich',  
+  publisher: 'Roman Abramovich',
+  icons: {
+    icon: [
+      { url: '/icons/favicon.ico' },
+      { url: '/icons/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/icons/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+  },
 }
 
 export default function RootLayout({children,}: {
