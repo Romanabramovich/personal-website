@@ -18,6 +18,16 @@ const experiences = [
   },
 
   {
+    company: "logs and found",
+    responsibilities: [
+      <>a distributed logging platform processing <span className="text-red-600 dark:text-red-400">1,000+ logs/second</span></>,
+      <>with real-time web socket streaming for live log updates with <span className="text-red-600 dark:text-red-400">sub-100ms</span> latency and a web dashboard with <span className="text-red-600 dark:text-red-400">filtering by severity and source</span></>
+    ],
+    techstack: ["python, fastapi, redis, postgreSQL"],
+    githubUrl: "https://github.com/Romanabramovich/logs-and-found"
+  },
+
+  {
     company: "nhl game prediction model ",
     responsibilities: [
         <>an xgboost model that predicts the outcome of nhl games</>,
@@ -79,7 +89,7 @@ export default function Page() {
             </div>
             <div className="space-y-1">
               <p>one ... and counting</p>
-              <p>four ... and counting</p>
+              <p>five ... and counting</p>
             </div>
           </div>         
         </div>
